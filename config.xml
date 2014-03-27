@@ -48,8 +48,9 @@
     <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
     
-    <plugin name="File" value="org.apache.cordova.FileUtils" />
-    <plugin name="FileTransfer" value="org.apache.cordova.FileTransfer" />   
+    <plugin name="File" value="plugin-transfer" />
+    <plugin name="FileTransfer" value="plugin-transfer" />   
+
     
     <access origin=".*" subdomains="true" />
     <access origin="http://127.0.0.1*" />
