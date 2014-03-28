@@ -114,15 +114,15 @@ div.ui-mobile-viewport { overflow-x: hidden; }
     opacity: 1;
 	-webkit-animation-name: popin;
 	-moz-animation-name: popin;
-	-webkit-animation-duration: 350ms;
-	-moz-animation-duration: 350ms;
+	-webkit-animation-duration: 1350ms;
+	-moz-animation-duration: 1350ms;
 }
 .pop.out {
 	-webkit-animation-name: fadeout;
 	-moz-animation-name: fadeout;
 	opacity: 0;
-	-webkit-animation-duration: 100ms;
-	-moz-animation-duration: 100ms;
+	-webkit-animation-duration: 1100ms;
+	-moz-animation-duration: 1100ms;
 }
 .pop.in.reverse {
 	-webkit-animation-name: fadein;
