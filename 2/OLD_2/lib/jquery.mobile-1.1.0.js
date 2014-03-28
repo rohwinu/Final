@@ -2256,8 +2256,6 @@ var createHandler = function( sequential ){
 				
 				$to.addClass( name + " in" + reverseClass );
 				
-                $to.addClass( $.mobile.activePageClass);
-                
 				if( none ){
 					doneIn();
 				}
