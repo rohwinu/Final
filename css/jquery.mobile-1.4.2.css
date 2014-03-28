@@ -1711,19 +1711,19 @@ button.ui-btn-icon-notext,
 }
 .in {
 	-webkit-animation-timing-function: ease-out;
-	-webkit-animation-duration: 350ms;
+	-webkit-animation-duration: 1350ms;
 	-moz-animation-timing-function: ease-out;
-	-moz-animation-duration: 350ms;
+	-moz-animation-duration: 1350ms;
 	animation-timing-function: ease-out;
-	animation-duration: 350ms;
+	animation-duration: 1350ms;
 }
 .out {
 	-webkit-animation-timing-function: ease-in;
-	-webkit-animation-duration: 225ms;
+	-webkit-animation-duration: 1225ms;
 	-moz-animation-timing-function: ease-in;
-	-moz-animation-duration: 225ms;
+	-moz-animation-duration: 1225ms;
 	animation-timing-function: ease-in;
-	animation-duration: 225ms;
+	animation-duration: 1225ms;
 }
 @-webkit-keyframes fadein {
     from { opacity: 0; }
