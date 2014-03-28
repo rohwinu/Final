@@ -22,11 +22,11 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.01, user-scalable=0, minimum-scale=1.01, maximum-scale=1.0">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>App CDC</title>
-
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         
         <script src="js/jquery-1.6.4.js"></script>
@@ -46,11 +46,6 @@
 		div.gallery-item a { display: block; margin: 5px; border: 1px solid #3c3c3c; }
 		div.gallery-item img { display: block; width: 100%; height: auto; }
 		#ubicacion .ui-content, #Gallery2 .ui-content { overflow: hidden; }
-        .ui-page{
-backface-visibility:hidden;
--webkit-backface-visibility:hidden; /* Chrome and Safari */
--moz-backface-visibility:hidden; /* Firefox */
-}
 		</style>
 
 		<!--
@@ -166,7 +161,7 @@ backface-visibility:hidden;
         
         function cargarTodosPacientes2(nit,opt)
         {
-            $.ajax({
+
                     type:"GET",
                     url:"http://cdc.gatolocostudios.com/VersionMobile/Librerias/funciones.php?accion=cargarTodosPacientes2"
                     +"&opt="+opt
@@ -338,14 +333,14 @@ backface-visibility:hidden;
                     <ul>
                     
                         <li>
-                            <a href="#servicios" data-role="button" data-transition="" data-theme="b"><img src="img/servicios.png" alt="" width="112" height="122"/></a>
+                            <a href="#servicios" data-role="button" data-transition="pop" data-theme="b"><img src="img/servicios.png" alt="" width="112" height="122"/></a>
                         </li>
-                        <li><a href="#nosotros" data-role="button" data-transition="" data-theme="b"><img src="img/nosotros.png" width="112" height="122" alt=""/></a></li>
+                        <li><a href="#nosotros" data-role="button" data-transition="pop" data-theme="b"><img src="img/nosotros.png" width="112" height="122" alt=""/></a></li>
                         <li>
-                            <a href="#pruebas" data-role="button" data-transition="" data-theme="b"><img src="img/pruebas.png" width="112" height="122" alt=""/></a>
+                            <a href="#pruebas" data-role="button" data-transition="pop" data-theme="b"><img src="img/pruebas.png" width="112" height="122" alt=""/></a>
                         </li>
                         <li>
-                            <a href="#ubicacion" data-role="button" data-transition="" data-theme="b"><img src="img/ubicacion.png" width="112" height="122" alt=""/></a>
+                            <a href="#ubicacion" data-role="button" data-transition="pop" data-theme="b"><img src="img/ubicacion.png" width="112" height="122" alt=""/></a>
                         </li>
                     </ul>
                 </div>
@@ -415,12 +410,12 @@ backface-visibility:hidden;
                         <li>
                             <a href="#page1" data-role="button" data-transition="flip" data-theme="b"><img src="img/inicio.png" alt="" width="112" height="122"/></a>
                         </li>
-                        <li><a href="#nosotros" data-role="button" data-transition="" data-theme="b"><img src="img/nosotros.png" width="112" height="122" alt=""/></a></li>
+                        <li><a href="#nosotros" data-role="button" data-transition="pop" data-theme="b"><img src="img/nosotros.png" width="112" height="122" alt=""/></a></li>
                         <li>
                             <a data-role="button" data-theme="b"><img src="img/pruebas.png" width="112" height="122" alt=""/></a>
                         </li>
                         <li>
-                            <a href="#ubicacion" data-role="button" data-transition="" data-theme="b"><img src="img/ubicacion.png" width="112" height="122" alt=""/></a>
+                            <a href="#ubicacion" data-role="button" data-transition="pop" data-theme="b"><img src="img/ubicacion.png" width="112" height="122" alt=""/></a>
                         </li>
                     </ul>
                 </div>
@@ -453,17 +448,17 @@ backface-visibility:hidden;
            <div class="botonera" data-role="navbar"  data-position="fixed" data-fullscreen="true">
                     <ul>
                         <li>
-                            <a href="#servicios" data-role="button" data-transition="" data-theme="b"><img src="img/servicios.png" alt="" width="112" height="122"/></a>
+                            <a href="#servicios" data-role="button" data-transition="pop" data-theme="b"><img src="img/servicios.png" alt="" width="112" height="122"/></a>
                         </li>
                         <li>
 							<a href="#page1" data-role="button" data-transition="flip" data-theme="b"><img src="img/inicio.png" alt="" width="112" height="122"/></a>
                         </li>
                         
                         <li>
-                            <a href="#pruebas" data-role="button" data-transition="" data-theme="b"><img src="img/pruebas.png" width="112" height="122" alt=""/></a>
+                            <a href="#pruebas" data-role="button" data-transition="pop" data-theme="b"><img src="img/pruebas.png" width="112" height="122" alt=""/></a>
                         </li>
                         <li>
-                            <a href="#ubicacion" data-role="button" data-transition="" data-theme="b"><img src="img/ubicacion.png" width="112" height="122" alt=""/></a>
+                            <a href="#ubicacion" data-role="button" data-transition="pop" data-theme="b"><img src="img/ubicacion.png" width="112" height="122" alt=""/></a>
                         </li>
                     </ul>
                 </div>
@@ -508,14 +503,14 @@ Bodanski que el laboratorio debe especificar con sus valores de referencia. </p>
            <div class="botonera" data-role="navbar"  data-position="fixed" data-fullscreen="true">
                     <ul>
                         <li>
-                            <a href="#servicios" data-role="button" data-transition="" data-theme="b"><img src="img/servicios.png" alt="" width="112" height="122"/></a>
+                            <a href="#servicios" data-role="button" data-transition="pop" data-theme="b"><img src="img/servicios.png" alt="" width="112" height="122"/></a>
                         </li>
-                        <li><a href="#nosotros" data-role="button" data-transition="" data-theme="b"><img src="img/nosotros.png" width="112" height="122" alt=""/></a></li>
+                        <li><a href="#nosotros" data-role="button" data-transition="pop" data-theme="b"><img src="img/nosotros.png" width="112" height="122" alt=""/></a></li>
                         <li>
                             <a href="#page1" data-role="button" data-transition="flip" data-theme="b"><img src="img/inicio.png" alt="" width="112" height="122"/></a>
                         </li>
                         <li>
-                            <a href="#ubicacion" data-role="button" data-transition="" data-theme="b"><img src="img/ubicacion.png" alt="" width="112" height="122"/></a>
+                            <a href="#ubicacion" data-role="button" data-transition="pop" data-theme="b"><img src="img/ubicacion.png" alt="" width="112" height="122"/></a>
                         </li>
                     </ul>
                 </div>
@@ -558,11 +553,11 @@ Bodanski que el laboratorio debe especificar con sus valores de referencia. </p>
            <div class="botonera" data-role="navbar"  data-position="fixed" data-fullscreen="true">
                     <ul>
                         <li>
-                            <a href="#servicios" data-role="button" data-transition="" data-theme="b"><img src="img/servicios.png" alt="" width="112" height="122"/></a>
+                            <a href="#servicios" data-role="button" data-transition="pop" data-theme="b"><img src="img/servicios.png" alt="" width="112" height="122"/></a>
                         </li>
-                        <li><a href="#nosotros" data-role="button" data-transition="" data-theme="b"><img src="img/nosotros.png" width="112" height="122" alt=""/></a></li>
+                        <li><a href="#nosotros" data-role="button" data-transition="pop" data-theme="b"><img src="img/nosotros.png" width="112" height="122" alt=""/></a></li>
                         <li>
-                           <a href="#pruebas" data-role="button" data-transition="" data-theme="b"><img src="img/pruebas.png" width="112" height="122" alt=""/></a>
+                           <a href="#pruebas" data-role="button" data-transition="pop" data-theme="b"><img src="img/pruebas.png" width="112" height="122" alt=""/></a>
                         </li>
                         <li>
                             <a href="#page1" data-role="button" data-transition="flip" data-theme="b"><img src="img/inicio.png" alt="" width="112" height="122"/></a>
@@ -587,7 +582,7 @@ Bodanski que el laboratorio debe especificar con sus valores de referencia. </p>
             <div data-role="footer" data-position="fixed" data-fullscreen="true">
                 <div class="botonera" data-role="navbar">
                     <ul>
-                        <li><a href="#page1" data-role="button" data-transition="" data-theme="b"><img src="img/inicioPPAL.svg" height="50px" alt="" style="text-align:left"/></a></li>
+                        <li><a href="#page1" data-role="button" data-transition="pop" data-theme="b"><img src="img/inicioPPAL.svg" height="50px" alt="" style="text-align:left"/></a></li>
                     </ul>
                 </div>
             </div>
@@ -615,7 +610,7 @@ Bodanski que el laboratorio debe especificar con sus valores de referencia. </p>
             
             <div class="botonera" data-role="navbar">
                     <ul>
-                        <li><a href="#page777777" data-role="button" data-transition="" data-theme="b"><img src="img/inicioPPAL.svg" height="50px" alt="" style="text-align:left"/></a></li>
+                        <li><a href="#page777777" data-role="button" data-transition="pop" data-theme="b"><img src="img/inicioPPAL.svg" height="50px" alt="" style="text-align:left"/></a></li>
                     </ul>
                 </div>
            
@@ -650,7 +645,7 @@ Bodanski que el laboratorio debe especificar con sus valores de referencia. </p>
                 <div class="botonera" data-role="navbar">
                     <ul>
                         <li><a data-role="button" href="#buscador"><img src="img/busca_ava.svg" height="50px" alt=""/></a></li>
-                        <li><a href="#page777777" data-role="button" data-transition="" data-theme="b"><img src="img/inicioPPAL.svg" height="50px" alt="" style="text-align:left"/></a></li>
+                        <li><a href="#page777777" data-role="button" data-transition="pop" data-theme="b"><img src="img/inicioPPAL.svg" height="50px" alt="" style="text-align:left"/></a></li>
                     </ul>
                 </div>
             </div>
