@@ -19,7 +19,7 @@
 -->
 <html>
     <head>
-        <meta charset="utf-8" />
+       <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
@@ -27,19 +27,20 @@
         <title>App CDC</title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        
         <script src="js/jquery-1.6.4.js"></script>
         <script src="js/jquery.mobile-1.1.0.js"></script>
-        <!--<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script>-->
-        <script src="js/menu.js"></script>
-		
-        <link href="css/menu.css" rel="stylesheet">
-        <!--<link href="css/jquery.mobile-1.4.2.css" rel="stylesheet"/>-->
         <link href="css/jquery.mobile.structure-1.1.0.css" rel="stylesheet">
         <link href="css/jquery.mobile.theme-1.1.0.css" rel="stylesheet">
+        <!-- slide icons-->
+        <script src="js/menu.js"></script>
         
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
         
+        <link href="css/menu.css" rel="stylesheet">
+        <!-- Fin slide icons-->
+		
+        
+        <link href="css/photoswipe.css" type="text/css" rel="stylesheet" />
         <style type="text/css">
 		div.gallery-row:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
 		div.gallery-item { float: left; width: 33.333333%; }
@@ -53,10 +54,10 @@
 		<script type="text/javascript" src="file:///C|/wamp/www/1.0.11/lib/jquery-1.6.1.min.js"></script>
         <script type="text/javascript" src="file:///C|/wamp/www/1.0.11/lib/jquery.mobile-1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
         
-
+-->
 		<script type="text/javascript" src="js/simple-inheritance.min.js"></script>
 		<script type="text/javascript" src="js/jquery.animate-enhanced.min.js"></script>
-		<script type="text/javascript" src="js/code-photoswipe-jQuery-1.0.11.js"></script>-->
+		<script type="text/javascript" src="js/code-photoswipe-jQuery-1.0.11.js"></script>
 	
     	<script type="text/javascript">
 		/*
@@ -64,7 +65,7 @@
 		*/
 		
 		$(document).ready(function(){
-			/*
+			
 			$('div.gallery-page').live('pageshow', function(e){
 					
 				// Re-initialize with the photos for the current page
@@ -72,7 +73,7 @@
 				return true;
 				
 			})
-				*/
+				
 		});
 	
 	</script>
@@ -161,7 +162,7 @@
         
         function cargarTodosPacientes2(nit,opt)
         {
-
+            $.ajax({
                     type:"GET",
                     url:"http://cdc.gatolocostudios.com/VersionMobile/Librerias/funciones.php?accion=cargarTodosPacientes2"
                     +"&opt="+opt
@@ -282,12 +283,9 @@
             
             sede = prueba(lat,lng);
             
-            //alert (lat+" - "+lng);
-        
+            alert (lat+" - "+lng);
+            
             $("#lat").text ("La sede mas cercana es: "+sede);
-            if(sede=="Fundadores"){$("#mapa").html('<iframe src="https://mapsengine.google.com/map/embed?mid=zuXs_cdNC1js.kEyWGptJJqQU" width="640" height="480"></iframe>');}
-            if(sede=="Bosque"){$("#mapa").html('<iframe src="https://mapsengine.google.com/map/embed?mid=zuXs_cdNC1js.kWtwFrDMciJw" width="640" height="480"></iframe>');}
-            if(sede=="Coomeva"){$("#mapa").html('<iframe src="https://mapsengine.google.com/map/embed?mid=zuXs_cdNC1js.krQIxqun1ogQ" width="640" height="480"></iframe>');}
 
 
         });

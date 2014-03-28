@@ -64,15 +64,15 @@ div.ui-mobile-viewport { overflow-x: hidden; }
 }
 .in {
 	-webkit-animation-timing-function: ease-out;
-	-webkit-animation-duration: 1350ms;
+	-webkit-animation-duration: 350ms;
 	-moz-animation-timing-function: ease-out;
-	-moz-animation-duration: 1350ms;
+	-moz-animation-duration: 350ms;
 }
 .out {
 	-webkit-animation-timing-function: ease-in;
-	-webkit-animation-duration: 1225ms;
+	-webkit-animation-duration: 225ms;
 	-moz-animation-timing-function: ease-in;
-	-moz-animation-duration: 1225;
+	-moz-animation-duration: 225;
 }
 @-webkit-keyframes fadein {
     from { opacity: 0; }
@@ -114,15 +114,15 @@ div.ui-mobile-viewport { overflow-x: hidden; }
     opacity: 1;
 	-webkit-animation-name: popin;
 	-moz-animation-name: popin;
-	-webkit-animation-duration: 1350ms;
-	-moz-animation-duration: 1350ms;
+	-webkit-animation-duration: 350ms;
+	-moz-animation-duration: 350ms;
 }
 .pop.out {
 	-webkit-animation-name: fadeout;
 	-moz-animation-name: fadeout;
 	opacity: 0;
-	-webkit-animation-duration: 1100ms;
-	-moz-animation-duration: 1100ms;
+	-webkit-animation-duration: 100ms;
+	-moz-animation-duration: 100ms;
 }
 .pop.in.reverse {
 	-webkit-animation-name: fadein;
