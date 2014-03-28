@@ -83,11 +83,8 @@
         $.support.cors                 = true;
         $.mobile.allowCrossDomainPages = true;
         $.mobile.pushStateEnabled      = false;
-        $.("[Data-role = header]") fixedtoolbar ({updatePagePadding: false}); 
-        $.("[Data-role = pie de página]") fixedtoolbar ({updatePagePadding: false}); 
       });
     </script>
-
     <script type="text/javascript">
         function obtenerCosito()
         {
@@ -220,76 +217,7 @@
             , fail);  //Modo de uso
         }
     </script>
-    <script>
-        function prueba(latS1,lngS1)
-        {
-            //Posicion Original
-            /*var latS1=4.531309;
-            var lngS1=-75.672440;*/
-            
-            //Fundadores 4.544857, -75.660670
-            var latS2=4.544857;
-            var lngS2=-75.660670;
-            
-            //El bosque 4.553221, -75.658192
-            var latS3=4.553221;
-            var lngS3=-75.658192;
-            
-            //Edif coomeva 4.554782, -75.656075
-            var latS4=4.554782;
-            var lngS4=-75.656075;
-            
-            var dist1 = distancia(latS1,lngS1,latS2,lngS2);
-            var dist2 = distancia(latS1,lngS1,latS3,lngS3);
-            var dist3 = distancia(latS1,lngS1,latS4,lngS4);
-            
-            
-            var disM=dist1;
-            var sede="Fundadores";
-            
-            if(dist2<dist1 && dist2<dist3){disM=dist2; sede="Bosque";}
-            if(dist3<dist1 && dist3<dist2){disM=dist3; sede="Coomeva";}
-           
-            //alert(sede);
-            return sede;
-            
-           
-        }
         
-        function distancia(latS1,lngS1,latS2,lngS2)
-        {
-            var unit="K";
-         
-            var radlat1 = Math.PI * latS1/180
-        	var radlat2 = Math.PI * latS2/180
-        	var radlon1 = Math.PI * lngS1/180
-        	var radlon2 = Math.PI * lngS2/180
-        	var theta = lngS1-lngS2
-        	var radtheta = Math.PI * theta/180
-        	var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
-        	dist = Math.acos(dist)
-        	dist = dist * 180/Math.PI
-        	dist = dist * 60 * 1.1515
-        	if (unit=="K") { dist = dist * 1.609344 }
-        	if (unit=="N") { dist = dist * 0.8684 }
-
-            return dist;
-        }
-        navigator.geolocation.getCurrentPosition (function (pos)
-        {        
-            var lat = pos.coords.latitude;
-            var lng = pos.coords.longitude;
-            var sede;
-            
-            sede = prueba(lat,lng);
-            
-            alert (lat+" - "+lng);
-            
-            $("#lat").text ("La sede mas cercana es: "+sede);
-
-
-        });
-        </script>    
         
     </head>
     <body>
@@ -317,9 +245,6 @@
                             <br/>
                             <br/>
                             <br/>
-                            <span> Latitude : </span> <span id=lat></span> <br />
-    <span> Longitude : </span> <span id=lng></span> <br />
-    <button onclick="prueba();return false;" class="ui-shadow ui-btn ui-corner-all">Enviar</button>
                         <h4 class="sol_clave" style="text-transform:none">Aún no tienes tu clave? <br /> Solicítala aquí</h4>
                         </div>
 					</span>
